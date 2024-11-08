@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Test sample</title>
+<link rel="icon" href="/favicon.ico">
+<style>
+body {
+    font-family:Verdana;
+    color: #333;
+    padding:100px;
+}
+.testClass{
+    background-color:yellow;
+}
+</style>
+</head>
+
+
+
+
+
+<!--This is a default HTML sample.-->
+
+
+
+
+
+<body>
+<div class="testClass" onclick="clickMe()">
+Hi Huang ZiYi
+<br>
+try click this.
+</div>
+<script type="text/javascript">
+function clickMe()
+{
+var testClassDiv = document.getElementsByClassName("testClass")[0];
+var testText = testClassDiv.innerHTML;
+testClassDiv.innerHTML = testText.replace(/try.+?this/i, "I Love You");
+}
+</script>
+</body>
+</html>
